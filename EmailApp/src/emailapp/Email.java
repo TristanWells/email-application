@@ -4,25 +4,25 @@ import java.util.Scanner; //Java utility for user to input data/information
 
 public class Email {
 	
-	private String firstName;					// First name variable
-	private String lastName;					// Last name variable
-	private String password;					// Password variable
-	private String department;					// Department name variable
+	private String firstName;				// First name variable
+	private String lastName;				// Last name variable
+	private String password;				// Password variable
+	private String department;				// Department name variable
 	private int mailboxCapacity = 500;			// Mailbox memory capacity
 	private String alternateEmail;				// Alternative email 
-	private int defaultPasswordLength = 10;		// Length of randomly generated password
-	private String email;						// Email
-	private String companySuffix = "java.com"; 	// Email suffix example
+	private int defaultPasswordLength = 10;			// Length of randomly generated password
+	private String email;					// Email
+	private String companySuffix = "java.com"; 		// Email suffix example
 	
-	// Constructor to receive first/last name
+	// ============ CONSTRUCTOR ==========
 	public Email(String firstName, String lastName) {
 		this.firstName = firstName;				// Construct first name
 		this.lastName = lastName;				// Construct last name
 		System.out.println("EMAIL CREATED: " + this.firstName + " " + this.lastName); // Output first and last name
 		
 		// Call method asking for the department - return department
-		this.department = setDepartment();		// Setter - department
-		System.out.println("Department: " + this.department); // Outputs departments
+		this.department = setDepartment();			// Setter - department
+		System.out.println("Department: " + this.department);   // Outputs departments
 		
 		// Call method to return random password
 		this.password = randomPassword(defaultPasswordLength);
