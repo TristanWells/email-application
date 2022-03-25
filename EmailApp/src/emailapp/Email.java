@@ -22,7 +22,7 @@ public class Email {
 		
 		// Call method asking for the department - return department
 		this.department = setDepartment();		// Setter - department
-		System.out.println("Department: " + this.department); // Outputs department
+		System.out.println("Department: " + this.department); // Outputs departments
 		
 		// Call method to return random password
 		this.password = randomPassword(defaultPasswordLength);
