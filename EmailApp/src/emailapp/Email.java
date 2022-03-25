@@ -16,13 +16,13 @@ public class Email {
 	
 	// Constructor to receive first/last name
 	public Email(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		System.out.println("EMAIL CREATED: " + this.firstName + " " + this.lastName);
+		this.firstName = firstName;				// Construct first name
+		this.lastName = lastName;				// Construct last name
+		System.out.println("EMAIL CREATED: " + this.firstName + " " + this.lastName); // Output first and last name
 		
 		// Call method asking for the department - return department
-		this.department = setDepartment();
-		System.out.println("Department: " + this.department);
+		this.department = setDepartment();		// Setter - department
+		System.out.println("Department: " + this.department); // Outputs department
 		
 		// Call method to return random password
 		this.password = randomPassword(defaultPasswordLength);
